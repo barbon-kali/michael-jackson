@@ -104,8 +104,9 @@
   --shadow-spotlight: 0 0 120px oklch(0.82 0.14 75 / 0.25);
   --shadow-deep: 0 30px 80px -20px oklch(0 0 0 / 0.8);
 
-  --font-display: 'Cinzel', 'Playfair Display', serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Bodoni Moda', 'Didot', serif;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
 }
 
 @layer base {
@@ -129,8 +130,11 @@
 
   h1, h2, h3, h4, .font-display {
     font-family: var(--font-display);
-    letter-spacing: 0.02em;
+    letter-spacing: -0.015em;
+    font-weight: 700;
   }
+  .font-serif { font-family: var(--font-serif); }
+  .font-display-italic { font-family: var(--font-display); font-style: italic; font-weight: 400; }
 }
 
 @layer utilities {
