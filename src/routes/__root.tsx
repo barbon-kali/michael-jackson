@@ -72,14 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MJ Academy — تعلم رقصات مايكل جاكسون" },
-      { name: "description", content: "أكاديمية سينمائية لتعلم جميع حركات ورقصات ملك البوب مايكل جاكسون: Moonwalk، Anti-Gravity Lean، Thriller وأكثر." },
+      { title: "MJ Académie — Apprenez à danser comme la Légende" },
+      { name: "description", content: "Académie cinématographique dédiée à la maîtrise de chaque mouvement de Michael Jackson : Moonwalk, Anti-Gravity Lean, Thriller et plus encore." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@300;400;500;600&display=swap" },
     ],
   }),
   shellComponent: RootShell,
