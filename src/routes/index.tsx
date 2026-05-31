@@ -172,7 +172,12 @@ function Index() {
 
           <div className="grid md:grid-cols-3 gap-10">
             {moves.map((m, i) => (
-              <article key={m.name} className="group relative">
+              <Link
+                key={m.slug}
+                to="/lecons/$slug"
+                params={{ slug: m.slug }}
+                className="group relative block"
+              >
                 <div className="relative aspect-[3/4] overflow-hidden mb-6 border border-[color:var(--gold)]/10 group-hover:border-[color:var(--gold)]/50 transition-all duration-700">
                   <img src={m.img} alt={m.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
@@ -190,10 +195,10 @@ function Index() {
                   <p className="font-serif text-base text-muted-foreground leading-relaxed mb-6">{m.desc}</p>
                   <div className="flex items-center justify-between border-t border-[color:var(--gold)]/20 pt-4 text-[10px] tracking-[0.4em] uppercase">
                     <span className="text-muted-foreground">{m.duration}</span>
-                    <span className="text-[color:var(--gold)] group-hover:translate-x-1 transition-transform inline-block">Apprendre →</span>
+                    <span className="text-[color:var(--gold)] group-hover:translate-x-1 transition-transform inline-block">Ouvrir la leçon →</span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
