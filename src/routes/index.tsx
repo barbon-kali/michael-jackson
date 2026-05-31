@@ -260,25 +260,23 @@ function Index() {
         <div className="max-w-4xl mx-auto text-center border border-[color:var(--gold)]/30 p-12 md:p-24 relative bg-card shadow-spotlight">
           <div className="absolute -top-px left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent" />
           <div className="absolute -bottom-px left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent" />
-          <p className="text-[color:var(--gold)] tracking-[0.6em] text-[10px] uppercase mb-8">Première Représentation</p>
+          <p className="text-[color:var(--gold)] tracking-[0.6em] text-[10px] uppercase mb-8">Accès Libre</p>
           <h2 className="font-display text-5xl md:text-7xl mb-8 leading-none">
             Le rideau<br />
             <span className="font-display-italic text-gradient-gold">se lève</span>
           </h2>
           <p className="font-serif italic text-lg text-muted-foreground mb-12 max-w-xl mx-auto">
-            Rejoignez des milliers de danseurs à travers le monde dans un voyage
-            pour faire revivre l'héritage du Roi. Première leçon offerte.
+            Aucune inscription. Aucun compte. Entrez directement en scène
+            et commencez à apprendre les mouvements du Roi — gratuitement.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Votre adresse e-mail"
-              className="flex-1 px-5 py-4 bg-input border border-[color:var(--gold)]/20 focus:border-[color:var(--gold)] outline-none text-sm tracking-wider"
-            />
-            <button type="submit" className="px-8 py-4 bg-[color:var(--gold)] text-primary-foreground text-[11px] uppercase tracking-[0.4em] font-semibold hover:opacity-90 transition">
-              Rejoindre
-            </button>
-          </form>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#moves" className="px-10 py-5 bg-[color:var(--gold)] text-primary-foreground text-[11px] uppercase tracking-[0.4em] font-semibold hover:opacity-90 transition">
+              Commencer maintenant
+            </a>
+            <a href="#journey" className="px-10 py-5 text-[11px] uppercase tracking-[0.4em] text-foreground border border-foreground/30 hover:border-[color:var(--gold)] hover:text-[color:var(--gold)] transition">
+              Voir le parcours
+            </a>
+          </div>
         </div>
       </section>
 
