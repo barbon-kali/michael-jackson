@@ -10,31 +10,34 @@ export const Route = createFileRoute("/")({
 
 const moves = [
   {
+    slug: "moonwalk",
     name: "Moonwalk",
     french: "La Marche Lunaire",
     year: "1983",
     level: "Intermédiaire",
-    duration: "12 leçons",
+    duration: "6 étapes illustrées",
     img: mjPose,
-    desc: "Le mouvement iconique révélé au monde lors de Motown 25. Un glissement vers l'arrière qui semble défier les lois de la physique.",
+    desc: "L'illusion du glissement arrière, décomposée en 6 étapes avec schémas de pas. Présentée à Motown 25 sur « Billie Jean ».",
   },
   {
+    slug: "anti-gravity-lean",
     name: "Anti-Gravity Lean",
     french: "L'Inclinaison Impossible",
     year: "1987",
     level: "Avancé",
-    duration: "8 leçons",
+    duration: "4 étapes + renforcement",
     img: mjLean,
-    desc: "L'inclinaison à 45° de Smooth Criminal. Le secret de la chaussure et la technique corporelle complète.",
+    desc: "L'inclinaison de Smooth Criminal expliquée — du brevet US 5,255,452 à la version sans chaussures spéciales.",
   },
   {
+    slug: "thriller",
     name: "Thriller",
-    french: "La Chorégraphie Légendaire",
-    year: "1982",
+    french: "La Chorégraphie Zombie",
+    year: "1983",
     level: "Débutant",
-    duration: "20 leçons",
+    duration: "6 étapes illustrées",
     img: mjTriptych,
-    desc: "La chorégraphie la plus célèbre de l'histoire de la musique. Apprenez-la pas à pas avec la danse zombie complète.",
+    desc: "La chorégraphie de Michael Peters, motif par motif : griffe, pas chassé, head jut, coup de hanche.",
   },
 ];
 
