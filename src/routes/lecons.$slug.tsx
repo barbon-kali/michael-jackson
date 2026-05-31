@@ -608,7 +608,7 @@ function ClawHand({ x, y }: { x: number; y: number }) {
 /* ============== Page ============== */
 
 function LessonPage() {
-  const { lesson } = Route.useLoaderData();
+  const { lesson } = Route.useLoaderData() as { lesson: Lesson };
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
